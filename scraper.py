@@ -30,7 +30,7 @@ def pdf2xml(infile):
     laparams.char_margin = 0.4
 
     # See pdf2txt.py
-    rsrcmgr = PDFResourceManager()
+    rsrcmgr = PDFResourceManager(caching=False)
     device = XMLConverter(rsrcmgr, outfile, codec='utf-8', laparams=laparams)
     interpreter = PDFPageInterpreter(rsrcmgr, device)
 
