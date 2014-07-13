@@ -80,6 +80,7 @@ xml = pdf2xml(inf)
 soup = BeautifulSoup(xml)
 
 print "2aaaaaa"
+'''
 # Walk all pages
 values = []
 for page in soup.find_all('page'):
@@ -88,7 +89,6 @@ for page in soup.find_all('page'):
     values = values + this_page
 print "3aaaaaa"
 
-'''
 
 #import pprint
 #pprint.pprint(values)
