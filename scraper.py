@@ -74,6 +74,9 @@ def do_page(soup):
 
     return ret
 
+print "aaaaaa"
+
+'''
 # Do the parsing
 inf = StringIO(urlopen('http://www.bratislava.sk/register/VismoOnline_ActionScripts/File.ashx?id_org=700026&id_dokumenty=27222').read())
 xml = pdf2xml(inf)
@@ -85,8 +88,8 @@ for page in soup.find_all('page'):
     this_page = do_page(page)
     values = values + this_page
 
-import pprint
-pprint.pprint(values)
+#import pprint
+#pprint.pprint(values)
 # Fold long columns
 for row in values:
     while len(row) > 11:
@@ -96,3 +99,4 @@ for row in values:
 header = values.pop(0)
 for row in values:
     scraperwiki.sql.save([], dict(zip(header, row)))
+'''
