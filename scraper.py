@@ -85,6 +85,8 @@ for page in soup.find_all('page'):
     this_page = do_page(page)
     values = values + this_page
 
+import pprint
+pprint.pprint(values)
 # Fold long columns
 for row in values:
     while len(row) > 11:
