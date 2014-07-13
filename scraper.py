@@ -76,9 +76,10 @@ def do_page(soup):
 # Do the parsing
 inf = StringIO(urlopen('http://www.bratislava.sk/register/VismoOnline_ActionScripts/File.ashx?id_org=700026&id_dokumenty=27222').read())
 print "2aaaaaa"
-'''
 xml = pdf2xml(inf)
+print "3aaaaaa"
 soup = BeautifulSoup(xml)
+print "4aaaaaa"
 
 # Walk all pages
 values = []
