@@ -101,4 +101,3 @@ for row in values:
 header = values.pop(0)
 for row in values:
     scraperwiki.sql.save([], dict(zip(header, row)))
-'''
